@@ -1,0 +1,40 @@
+Teach A = "Joe gave Ashley his number"
+Teach B = "Joe talks to Ashley today"
+Teach C = "Ashley likes Joe"
+Teach D = "Ashley knows where Joe lives"
+Teach E = "Ashley has Joe's number"
+Teach F = "Joe is single"
+Teach G = "Ashley is friends with Joe"
+Teach H = "Ashley is happy"
+Teach I = "Ashley needs help with DB homework"
+Teach J = "Joe is cute"
+Teach K = "Joe has Office Hours today"
+Teach L = "Ashley goes to Joe's office hours"
+Teach M = "Today is Wednesday"
+Teach N = "Joe and Ashley get coffee"
+Teach O = "Joe asks Ashley out on a date"
+Teach P = "Joe likes Ashley"
+Teach Q = "Joe and Ashley are sleepy"
+Teach R = "Grace asks Joe to be Ashley's partner for AI hw"
+Teach S = "Grace formally introduces Joe to Ashley"
+Teach T = "Elaine makes fun of Ashley"
+Teach U = "Joe takes Ashley to a fancy restaurant"
+Teach V = "Joe holds Ashley's hands"
+Teach W = "Joe and Ashley go stargazing"
+Teach A = true
+Teach F = true
+Teach D = true
+Teach P = true
+Teach F&P -> N
+Teach A&O&B -> N
+Teach P&F -> O
+Teach Q|E -> O
+Teach (A&E)|(I&L&!M) -> H
+Teach F|(D&E) -> H
+Teach ((S&R)&P)|((!W)&U&O)|V -> T
+Teach U&V -> R
+List
+Learn //Should add N,O,H
+List
+Why ((S&R)&P)|((!W)&U&O)|V //Should return false
+Exit

@@ -1,0 +1,13 @@
+Teach A = "alarm beeps"
+Teach S = "smoky"
+Teach H = "hot"
+Teach W = "sprinklers"
+Teach F = "fire"
+Teach A = true
+Teach H = true
+Teach A -> S
+Teach H&S -> F
+Teach F -> W
+List
+Learn // should add S, F, W
+List

@@ -1,0 +1,20 @@
+teach a = "a"
+teach b = "b"
+teach c = "c"
+teach d = "d"
+teach e = "e"
+teach f = "f"
+teach g = "g"
+teach a -> b
+teach b -> c
+teach c -> d
+teach d -> e
+teach e -> f
+teach f -> g
+teach a = true
+teach g = true
+query g //should be true bc is in facts db
+why g //should be true
+teach a = false
+why g //should be false
+query g //should be true

@@ -1,0 +1,25 @@
+Teach A = "It is cold outside"
+Teach B = "Daniel does not like cold"
+Teach C = "There exists a scarf"
+Teach D = "Daniel is happy"
+Teach !(A)|(!B|C) -> D
+Teach B = true
+Teach E = "There exists a sweater"
+Teach F = "Daniel wants hot tea"
+Teach G = "It's late at night"
+Teach H = "Grace offers Daniel hot tea"
+Teach I = "Everybody else is drinking hot tea"
+Teach J = "There are new flavors of hot tea to try"
+Teach K = "Kroger has a flash sale"
+Teach (!(!(A&B|(!E)))|G&D)|(H&J&I) -> F
+Teach A&J -> H
+Teach G|J -> I
+Teach A&K -> J
+Teach G = true
+Teach I = true
+Teach D = true
+List
+Why D //True
+List
+Why F //True
+Exit

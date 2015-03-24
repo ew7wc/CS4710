@@ -1,0 +1,19 @@
+Teach A = "A"
+Teach B = "B"
+Teach C = "C"
+Teach D = "D"
+Teach E = "E"
+Teach F = "F"
+Teach E&B|C&D -> A
+Teach F&!C|C&!F -> E
+Teach !D -> B
+Teach C = true
+List
+Learn
+List
+Query A
+Teach F = true
+List
+Learn
+List
+Query A

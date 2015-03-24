@@ -1,0 +1,9 @@
+Teach A = "A"
+Teach B = "B"
+Teach C = "C"
+Teach D = "D"
+Teach A = true
+Teach B = true
+Teach A&B -> C
+Teach A&B -> D
+Why C&D //true

@@ -1,0 +1,17 @@
+Teach A = "It is cold outside"
+Teach B = "Daniel does not like cold"
+Teach C = "There exists a scarf"
+Teach D = "Daniel is happy"
+Teach !(A)|(!B|C) -> D
+Teach B = true
+Why D  //should output true
+Query D //also true
+Learn  //now D is set to true and is in the factsdb
+List
+Teach A = true
+Teach B = false
+List
+Why D //true
+List
+Query D //D is true because still in factsdb
+List

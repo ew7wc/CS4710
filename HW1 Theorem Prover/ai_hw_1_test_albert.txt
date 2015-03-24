@@ -1,0 +1,14 @@
+Teach S = "smoky"
+Teach F = "flames"
+Teach Z = "fire"
+Teach S = true
+Teach F = true
+Teach S&F -> Z
+List
+Learn //Should add Z to Facts
+List
+Teach S = false
+Teach F = false
+Why (Z|F) //Should be false 
+Query Z //Should be true
+Exit

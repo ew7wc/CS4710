@@ -1,0 +1,56 @@
+Teach PchemExam = "I have a pchem exam this week"
+Teach PchemTakeHome = "I also have a take home exam due"
+Teach BiochemReport = "There is a biochem lab report due Thurs"
+Teach AI_HW = "AI homework is due"
+Teach AI_exam = "AI exam this week"
+Teach Stress = "I am stressed"
+Teach Happy = "I am HAPPY!!!"
+Teach doWell = "Passed all exams!"
+Teach noExams = "There are no exams this week"
+Teach AshleyAndJoe = "Joe talks to Ashley and gets her number"
+Teach funny = "Ashley and Grace make me laugh"
+Teach Thursday = "It's thursday"
+Teach outsideLabWork = "I have to spend time outside of class to do experiments :("
+Teach annoyed = "i am annoyed"
+Teach PchemExam = true
+Teach PchemTakeHome = true
+Teach BiochemReport = true
+Teach AI_HW = true
+Teach AI_exam = true
+Teach funny = true
+Teach PchemExam&PchemTakeHome -> Stress
+Teach AI_HW&AI_exam -> Stress
+Teach BiochemReport|outsideLabWork -> annoyed
+Teach doWell -> Happy
+Teach noExams -> Happy
+Teach (!Stress&!PchemExam)|(AshleyAndJoe|funny) -> Happy
+List 
+Learn //Facts DB should now have added Stress, annoyed, Happy
+List
+Teach Stress = false
+Teach annoyed = false
+Teach Happy = false
+List
+Teach stuck = "I can't finish this assignment"
+Teach stuck = true
+Teach noInterviews = "There are no interviews scheduled this week"
+Teach noAssignmentsDue = "No HW due this week"
+Teach annoyed = "i am annoyed" //Should output error message. 
+Teach confused = "I am confused"
+Teach freeTime = "I have free time this week"
+Teach spring_Break = "It is spring break this week"
+Teach doWell|(noExams&noInterviews&noAssignmentsDue) -> Happy
+Teach !Stress -> Happy
+Teach stuck -> confused
+Teach stuck -> annoyed
+Teach (!stuck|(Happy&!annoyed))|(noExams&noAssignmentsDue) -> freeTime
+Teach spring_Break -> freeTime
+List
+Learn //Facts DB should now have added Stress, annoyed, Happy, confused
+List
+Teach annoyed = false
+Why (annoyed) //Should be true
+Teach Stress -> annoyed
+List
+Why freeTime //Should be false
+Exit
